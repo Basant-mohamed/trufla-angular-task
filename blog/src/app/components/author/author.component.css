@@ -1,0 +1,14 @@
+.author{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(170, 169, 169, 0.933);
+}
+
+.author h2 {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.author img{
+    border-radius: 50%;
+    width: 30%;
+}

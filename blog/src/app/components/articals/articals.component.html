@@ -1,0 +1,38 @@
+<div class="artical" id="artical">
+<div class="container">
+    <h2 class="text-center">Articals</h2>
+    <div class="row">
+
+        <div *ngFor="let art of articalArr" class="col-lg-4">
+            <img src="../assets/blog2.jpg">
+            <h2>{{art.title}}</h2>
+            <p class="lead">
+                {{art.body}}
+            </p>
+            <p>written by : <em>{{art.author.name}}</em> at : {{art.date | date}}</p>
+            <button class="btn btn-outline-success" (click)="likeMe(art._id)" [disabled]="disableLikes"><i class="fa fa-thumbs-up"></i>Like</button>
+            &nbsp;&nbsp; 
+            <button class="btn btn-outline-danger" (click)="unLikeMe(art._id)" [disabled]="disableUnLikes"><i class="fa fa-thumbs-down" ></i>UnLike</button>
+           
+        </div>
+        <!-- <div class="col-lg-4">
+            <img src="../assets/blog2.jpg">
+            <h3>Title</h3>
+            <p class="lead">
+                Lorem ipsum is placeholder text commonly used in the graphic, print, 
+                and publishing industries for previewing layouts and visual mockups.
+            </p>
+            <a class="btn btn-outline-success">Read more</a>
+        </div>
+        <div class="col-lg-4">
+            <img src="../assets/blog2.jpg">
+            <h3>Title</h3>
+            <p class="lead">
+                Lorem ipsum is placeholder text commonly used in the graphic, print, 
+                and publishing industries for previewing layouts and visual mockups.
+            </p>
+            <a class="btn btn-outline-success">Read more</a>
+        </div> -->
+    </div>
+</div>
+</div>
